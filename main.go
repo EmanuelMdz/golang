@@ -1,7 +1,13 @@
 package main
 
-import "github.com/EmanuelMdz/golang/variables"
+import (
+	"fmt"
+
+	"github.com/EmanuelMdz/golang/variables"
+)
 
 func main() {
-    variables.MuestroEnteros()
+    estado, texto := variables.ConviertoATexto(1500)
+    fmt.Println(estado)
+    fmt.Println(texto)
 }
